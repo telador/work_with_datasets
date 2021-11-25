@@ -51,6 +51,7 @@ namespace CH
 
         private void button2_Click(object sender, EventArgs e)
         {
+            pictureBox1.Size = new Size(960, 540); 
             folderBrowserDialog1.ShowDialog();
             pictureBox1.Image.Save(folderBrowserDialog1.SelectedPath + "\\result.png", System.Drawing.Imaging.ImageFormat.Png);
         }
@@ -67,6 +68,7 @@ namespace CH
 
         private void button3_Click(object sender, EventArgs e)
         {
+            pictureBox1.Size = new Size(960, 540);
             int[] ans = new int[n];
             ans[0] = 0;
             int t = 1;
